@@ -76,10 +76,12 @@
           <h1 class="ps-center">Nuentro Menu</h1>
           <br />
           <% productos.forEach(productos=>{%>
+          <a href="/detalle/<%=productos.id%>">
           <h4><%= productos.nombre %></h4>
           <p class="ps-text-grey">
             <%= productos.descripcion%> U$S <%= productos.precio%>
           </p>
+          </a>
           <br />
           <%})%>
         <div class="ps-col l6 ps-padding-large ps-img-menu">
